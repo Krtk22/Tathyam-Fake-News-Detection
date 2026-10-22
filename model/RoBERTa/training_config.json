@@ -1,0 +1,11 @@
+{
+  "model": "roberta-base",
+  "max_length": 128,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "epochs": 3,
+  "seed": 42,
+  "best_epoch": 2,
+  "best_val_weighted_f1": 0.8611871726689609
+}

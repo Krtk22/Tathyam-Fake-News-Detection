@@ -1,0 +1,20 @@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Trained model weights
+*.pth
+*.safetensors
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log

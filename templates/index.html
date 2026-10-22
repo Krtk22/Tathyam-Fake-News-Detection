@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tathyam | Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">✦ TATHYAM</div>
+    <span class="nav-label">AI-POWERED NEWS ANALYSIS</span>
+</header>
+
+<main class="container">
+
+    <div class="hero">
+        <div class="tag">✦ INTELLIGENT NEWS ANALYSIS</div>
+        <h1>Separate Fact <span>From Fiction.</span></h1>
+        <p>
+            Analyze news headlines using our AI-powered
+            detection system.
+        </p>
+    </div>
+
+    <section class="analysis-card">
+        <div class="card-heading">
+            <h2>Verify News</h2>
+            <span class="status">● AI Model</span>
+        </div>
+
+        <label for="headline">NEWS HEADLINE</label>
+
+        <textarea id="headline"
+            placeholder="Enter or paste a news headline here..."></textarea>
+
+        <div class="actions">
+            <span>Powered by RoBERTa</span>
+            <button id="verifyBtn" onclick="verifyNews()">
+                Analyze Headline →
+            </button>
+        </div>
+
+        <div id="result" class="result hidden" aria-live="polite">
+            <div class="result-heading">ANALYSIS RESULT</div>
+            <h2 id="prediction"></h2>
+            <p id="confidence"></p>
+            <div class="confidence-track">
+                <div id="confidenceBar"></div>
+            </div>
+            <p id="resultMessage"></p>
+        </div>
+    </section>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <div class="info-icon">◎</div>
+            <h3>Deep Learning</h3>
+            <p>Powered by transformer-based language models.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="info-icon">◇</div>
+            <h3>News Classification</h3>
+            <p>Classifies headlines as potentially real or fake.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="info-icon">✧</div>
+            <h3>Explainable AI</h3>
+            <p>Interpretability features planned using LIME.</p>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    TATHYAM © 2026 | Fake News Detection System
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
